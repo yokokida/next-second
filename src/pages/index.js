@@ -1,5 +1,5 @@
 // pages/index.js
-import Link from "next/link";
+// import Link from "next/link";
 import { client } from "../libs/client";
 
 export default function Home({ blogs }) {
@@ -8,7 +8,7 @@ export default function Home({ blogs }) {
       <ul>
         {blogs.map((blogs) => (
           <li key={blogs.id}>
-            <Link href={`/blogs/${blogs.id}`}>{blogs.title}</Link>
+            <a href={`/blogs/${blogs.id}`}>{blogs.title}</a>
           </li>
         ))}
       </ul>
