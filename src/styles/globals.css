@@ -1,7 +1,9 @@
 @charset "utf-8";
+@import url(home.css);
+@import url(entry.css);
+@import url(common.css);
 
 :root {
-	/* color */
 	--black: #1A1A1A;
 	--gray: #6C6C6C;
 	--gray-line: #dcdddd;
@@ -14,12 +16,10 @@
 	--red-dark: #490707;
 	--red: #FF0000;
 	--cream: #F7F5F2;
-	/* font-weight */
 	--regular: 400;
 	--medium: 500;
 	--demi: 600;
 	--bold: 700;
-	/* font-family */
 	--shippori: 'Shippori Mincho', serif;
 	--inter: 'Inter', sans-serif;
 	--zenkaku: 'Zen Kaku Gothic New', sans-serif;
@@ -690,9 +690,9 @@ figure {
 	transform: scale(1, 1);
 }
 
-.btn-primary:hover span {
-	/* background-image: url(../images/common/arrow_02.svg); */
-}
+/* .btn-primary:hover span {
+	background-image: url(../images/common/arrow_02.svg);
+} */
 
 .btn-primary:hover span::before {
 	background: var(--black);
@@ -703,9 +703,9 @@ figure {
 	right: unset;
 }
 
-.btn-primary.reverse:hover span {
-	/* background-image: url(../images/common/arrow_04.svg); */
-}
+/* .btn-primary.reverse:hover span {
+	background-image: url(../images/common/arrow_04.svg);
+} */
 
 .btn-secondary {
 	position: relative;
