@@ -1,3 +1,5 @@
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 import RecruitIntro from "../components/RecruitIntro";
 import RecruitOccupation from "../components/RecruitOccupation";
 import RecruitInterview from "../components/RecruitInterview";
@@ -9,13 +11,17 @@ import RecruitForm from "../components/RecruitForm";
 export default function Recruit() {
   return (
     <>
-      <RecruitIntro />
-      <RecruitOccupation />
-      <RecruitInterview />
-      <RecruitEnvironment />
-      <RecruitData />
-      <RecruitRequirement />
-      <RecruitForm />
+      <Header />
+      <main>
+        <RecruitIntro />
+        <RecruitOccupation />
+        <RecruitInterview />
+        <RecruitEnvironment />
+        <RecruitData />
+        <RecruitRequirement />
+        <RecruitForm />
+      </main>
+      <Footer />
     </>
   );
 }
