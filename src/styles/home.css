@@ -237,6 +237,60 @@
 	}
 }
 
+/* about */
+#home-about {
+	margin-top: 200px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#home-about::before {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#home-about .sec-inner {
+	padding: 0px 0 200px;
+}
+
+#home-about .sec-ttl-box {
+	position: relative;
+	left: 0;
+	top: -50px;
+	padding-bottom: 0;
+}
+
+#home-about .content-box {
+	width: 640px;
+	margin: -85px 0 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+
+	#home-about {
+		margin-top: 0;
+	}
+
+	#home-about .sec-inner {
+		padding: 100px 0;
+	}
+
+	#home-about .sec-ttl-box {
+		top: 0;
+	}
+
+	#home-about .content-box {
+		width: 100%;
+		margin: 60px 0 0;
+	}
+}
+
 /* business */
 #home-business .sec-inner {
 	padding: 150px 0 588px;
