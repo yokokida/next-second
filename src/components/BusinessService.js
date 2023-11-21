@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function BusinessService() {
   const services = [
     {
@@ -45,22 +46,22 @@ export default function BusinessService() {
                 ))}
               </div>
               <div class="img-area">
-                <img
-                  src="../images/home/business_01"
+                <Image
+                  src="/images/home/business_01.jpg"
                   alt="事業内容1"
                   class="fadein-trigger"
                   width="428"
                   height="379"
                 />
-                <img
-                  src="../images/home/business_02"
+                <Image
+                  src="/images/home/business_02.jpg"
                   alt="事業内容2"
                   class="fadein-trigger"
                   width="428"
                   height="509"
                 />
-                <img
-                  src="../images/home/business_03"
+                <Image
+                  src="/images/home/business_03.jpg"
                   alt="事業内容3"
                   class="fadein-trigger"
                   width="550"

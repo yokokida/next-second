@@ -1,28 +1,31 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function RecruitInterview() {
   const interviews = [
     {
-      img: "../images/page/recruit/img_01.jpg",
+      img: "/images/page/recruit/img_01.jpg",
       nameJa: "メッシ",
       nameEn: "Lionel Andres Messi",
       role: "バルセロナ/FW",
       year: "1987",
     },
     {
-      img: "../images/page/recruit/img_02.jpg",
+      img: "/images/page/recruit/img_02.jpg",
       nameJa: "メッシ",
       nameEn: "Lionel Andres Messi",
       role: "バルセロナ/FW",
       year: "1987",
     },
     {
-      img: "../images/page/recruit/img_03.jpg",
+      img: "/images/page/recruit/img_03.jpg",
       nameJa: "メッシ",
       nameEn: "Lionel Andres Messi",
       role: "バルセロナ/FW",
       year: "1987",
     },
     {
-      img: "../images/page/recruit/img_04.jpg",
+      img: "/images/page/recruit/img_04.jpg",
       nameJa: "メッシ",
       nameEn: "Lionel Andres Messi",
       role: "バルセロナ/FW",
@@ -42,12 +45,12 @@ export default function RecruitInterview() {
           <div class="content-box">
             <div class="m-interview-list">
               {interviews.map((interview) => (
-                <a
+                <Link
                   href="/interview/01/"
                   class="item-box fadein-trigger is-active"
                 >
                   <div class="img-box">
-                    <img
+                    <Image
                       src={interview["img"]}
                       alt="採用情報インタビュー"
                       class="fadein-trigger"
@@ -64,13 +67,13 @@ export default function RecruitInterview() {
                       {interview["role"]}/{interview["year"]}
                     </p>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
             <div class="btn-box center-center">
-              <a href="/interview/" class="btn btn-primary">
+              <Link href="/interview/" class="btn btn-primary">
                 <span>一覧はこちら</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

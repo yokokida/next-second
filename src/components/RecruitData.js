@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function RecruitData() {
   return (
     <>
@@ -11,7 +12,7 @@ export default function RecruitData() {
             <div class="content-box">
               <div class="data-container">
                 <div class="img-box">
-                  <img
+                  <Image
                     src=""
                     alt="データで見る株式会社OO"
                     class="fadein-trigger"

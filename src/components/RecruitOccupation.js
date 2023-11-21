@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function RecruitIntro() {
   const occupations = [
     {
@@ -30,7 +31,7 @@ export default function RecruitIntro() {
                 <div class="m-img-txt-box">
                   <div class="img-area">
                     <div class="img-box">
-                      <img
+                      <Image
                         src={occupation["img"]}
                         alt="対応エリア"
                         width="500"

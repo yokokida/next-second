@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <>
@@ -6,7 +9,7 @@ export default function Footer() {
           <div class="content-width">
             <div class="info-area">
               <a href="https://github.com/yokokida" class="img-box">
-                <img
+                <Image
                   src="/images/common/logo_01.svg"
                   alt="株式会社"
                   width="200"
@@ -19,7 +22,7 @@ export default function Footer() {
                 新潟県新潟市西区
                 <br />
                 TEL.
-                <a href="0000000000" class="tel">
+                <a href="tel:0000000000" class="tel">
                   0000000000
                 </a>
               </p>
@@ -28,125 +31,133 @@ export default function Footer() {
               <nav class="menu-box sp-only">
                 <ul id="menu-sp-nav" class="sp-nav">
                   <li class="menu-item">
-                    <a href="">
+                    <Link href="">
                       <span class="en">top</span>
                       <br />
                       <span class="ja">トップ</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="menu-item">
-                    <a href="/about/">
+                    <Link href="/about/">
                       <span class="en">about us</span>
                       <br />
                       <span class="ja">私たちについて</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="menu-item">
-                    <a href="/business/">
+                    <Link href="/business/">
                       <span class="en">business</span>
                       <br />
                       <span class="ja">事業紹介</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="menu-item">
-                    <a href="/blog/">
+                    <Link href="/blog/">
                       <span class="en">news</span>
                       <br />
                       <span class="ja">お知らせ</span>
-                    </a>
+                    </Link>
                   </li>
                   <li class="menu-item">
-                    <a href="/recruit/">
+                    <Link href="/recruit/">
                       <span class="en">recruit</span>
                       <br />
                       <span class="ja">採用情報</span>
-                    </a>
+                    </Link>
                     <ul class="sub-menu">
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-occupation">仕事を知る</a>
+                        <Link href="/recruit/#recruit-occupation">
+                          仕事を知る
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-interview">
+                        <Link href="/recruit/#recruit-interview">
                           社員インタビュー
-                        </a>
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-environment">働く環境</a>
+                        <Link href="/recruit/#recruit-environment">
+                          働く環境
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-requirement">募集要項</a>
+                        <Link href="/recruit/#recruit-requirement">
+                          募集要項
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-entry">エントリー</a>
+                        <Link href="/recruit/#recruit-entry">エントリー</Link>
                       </li>
                     </ul>
                   </li>
                   <li class="menu-item">
-                    <a href="/contact/">
+                    <Link href="/contact/">
                       <span class="en">contact</span>
                       <br />
                       <span class="ja">お問い合わせ</span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
               <nav class="menu-box pc-only">
                 <ul class="menu-list">
                   <li class="menu-item">
-                    <a href="">トップ</a>
+                    <Link href="">トップ</Link>
                   </li>
                   <li class="menu-item">
-                    <a href="/about/">私たちについて</a>
-                  </li>
-                </ul>
-                <ul class="menu-list">
-                  <li class="menu-item">
-                    <a href="/business/">事業内容</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="/blog/">お知らせ</a>
+                    <Link href="/about/">私たちについて</Link>
                   </li>
                 </ul>
                 <ul class="menu-list">
                   <li class="menu-item">
-                    <a href="/recruit/">採用情報</a>
+                    <Link href="/business/">事業内容</Link>
+                  </li>
+                  <li class="menu-item">
+                    <Link href="/blog/">お知らせ</Link>
+                  </li>
+                </ul>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <Link href="/recruit/">採用情報</Link>
                     <ul class="sub-menu">
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-find">仕事を知る</a>
+                        <Link href="/recruit/#recruit-find">仕事を知る</Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-interview">
+                        <Link href="/recruit/#recruit-interview">
                           社員インタビュー
-                        </a>
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-env">働く環境</a>
+                        <Link href="/recruit/#recruit-env">働く環境</Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-data">データで見る</a>
+                        <Link href="/recruit/#recruit-data">データで見る</Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-requirement">募集要項</a>
+                        <Link href="/recruit/#recruit-requirement">
+                          募集要項
+                        </Link>
                       </li>
                       <li class="menu-item">
-                        <a href="/recruit/#recruit-entry">エントリー</a>
+                        <Link href="/recruit/#recruit-entry">エントリー</Link>
                       </li>
                     </ul>
                   </li>
                 </ul>
                 <ul class="menu-list">
                   <li class="menu-item">
-                    <a href="/contact/">お問い合わせ</a>
+                    <Link href="/contact/">お問い合わせ</Link>
                   </li>
                   <li class="menu-item">
-                    <a href="/privacy-policy/">プライバシーポリシー</a>
+                    <Link href="/privacy-policy/">プライバシーポリシー</Link>
                   </li>
                 </ul>
               </nav>
             </div>
-            <a href="#" class="to-top">
+            <Link href="#" class="to-top">
               page top
-            </a>
+            </Link>
           </div>
         </div>
         <div class="copyright">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HomeBisness() {
   return (
     <>
@@ -21,22 +23,22 @@ export default function HomeBisness() {
                 </div>
               </div>
               <div class="img-area">
-                <img
-                  src=""
+                <Image
+                  src="/images/home/business_01.jpg"
                   alt="事業内容1"
                   class="fadein-trigger"
                   width="428"
                   height="379"
                 />
-                <img
-                  src=""
+                <Image
+                  src="/images/home/business_02.jpg"
                   alt="事業内容1"
                   class="fadein-trigger"
                   width="428"
                   height="509"
                 />
-                <img
-                  src=""
+                <Image
+                  src="/images/home/business_03.jpg"
                   alt="事業内容1"
                   class="fadein-trigger"
                   width="550"

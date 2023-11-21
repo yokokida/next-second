@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function HomeBisness() {
   return (
     <>
@@ -22,21 +23,23 @@ export default function HomeBisness() {
                         2023.8.1
                       </time>
                       <div class="post-cats">
-                        <a href="/blog/" class="post-cat">
+                        <Link href="/blog/" class="post-cat">
                           お知らせ
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <h3 class="post-ttl">
-                      <a href="/blog/26/">ホームページをリニューアルしました</a>
+                      <Link href="/blog/26/">
+                        ホームページをリニューアルしました
+                      </Link>
                     </h3>
                   </div>
                 </div>
               </div>
               <div class="btn-box right-center">
-                <a href="/blog/" class="btn btn-primary">
+                <Link href="/blog/" class="btn btn-primary">
                   <span>一覧はこちら</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

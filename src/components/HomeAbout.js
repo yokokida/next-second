@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomeAbout() {
   return (
     <>
@@ -18,9 +20,9 @@ export default function HomeAbout() {
                 Voluptatem aliquid eligendi consequunturrecusandae laudantium.
               </p>
               <div class="btn-box">
-                <a href="/about/" class="btn btn-primary">
+                <Link href="/about/" class="btn btn-primary">
                   <span>会社情報はこちら</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

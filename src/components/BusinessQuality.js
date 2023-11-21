@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function BusinessQuality() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function BusinessQuality() {
                 <div class="m-img-txt-box">
                   <div class="img-area">
                     <div class="img-box">
-                      <img
+                      <Image
                         src="../images/home/business_03.jpg"
                         alt="事業内容3"
                         class="fadein-trigger"

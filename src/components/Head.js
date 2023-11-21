@@ -12,7 +12,7 @@ export default function Head() {
         <meta name="robots" content="noindex, nofollow" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
+        <meta name="generator" content="" />
         <title>{pageTitle}</title>
         <meta name="description" content={Description} />
         <link rel="canonical" href={Domain} />

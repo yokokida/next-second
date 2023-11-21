@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutAccess() {
   return (
     <>
@@ -14,7 +16,7 @@ export default function AboutAccess() {
               <div class="headquarters">
                 <h3 class="ttl ttl-large">本社</h3>
                 <div class="img-box">
-                  <img
+                  <Image
                     src="/images/home/business_03.jpg"
                     alt="事業内容3"
                     class="fadein-trigger"

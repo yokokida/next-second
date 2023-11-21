@@ -27,12 +27,12 @@ export default function AboutOutline() {
           </div>
           <div class="content-box">
             <div class="m-dl-container">
-              {outlines.map(function (outline) {
+              {outlines.map((outline) => (
                 <dl>
                   <dt>{outline.head}</dt>
                   <dd>{outline.cont}</dd>
-                </dl>;
-              })}
+                </dl>
+              ))}
             </div>
           </div>
         </div>

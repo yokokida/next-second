@@ -108,8 +108,8 @@ export default function RecruitIntro() {
                     <div class="m-dl-container">
                       {conditionTable01.map((condition) => (
                         <dl>
-                          <dt>{condition.head}</dt>
-                          <dd>{condition.cont}</dd>
+                          <dt>{condition["head"]}</dt>
+                          <dd>{condition["cont"]}</dd>
                         </dl>
                       ))}
                     </div>
@@ -119,8 +119,8 @@ export default function RecruitIntro() {
                     <div class="m-dl-container">
                       {conditionTable02.map((condition) => (
                         <dl>
-                          <dt>{condition.head}</dt>
-                          <dd>{condition.cont}</dd>
+                          <dt>{condition["head"]}</dt>
+                          <dd>{condition["cont"]}</dd>
                         </dl>
                       ))}
                     </div>

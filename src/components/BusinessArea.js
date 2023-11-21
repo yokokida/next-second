@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function BusinessArea() {
   const areas = [
     {
@@ -28,7 +29,7 @@ export default function BusinessArea() {
                     <h3 class="title">{area["ttl"]}</h3>
                     <div class="img-area">
                       <div class="img-box">
-                        <img
+                        <Image
                           src={area["img"]}
                           alt="対応エリア"
                           width="365"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutIntro() {
   return (
     <section id="about-intro">
@@ -7,7 +9,7 @@ export default function AboutIntro() {
             <div class="m-img-txt-box reverse">
               <div class="img-area">
                 <div class="img-box">
-                  <img
+                  <Image
                     src="/images/home/business_01.jpg"
                     alt="事業内容1"
                     class="fadein-trigger"

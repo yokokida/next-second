@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function HomeRecruit() {
   return (
     <>
@@ -6,28 +9,28 @@ export default function HomeRecruit() {
           <div class="content-width">
             <div class="content-box">
               <div class="img-area img-box">
-                <img
+                <Image
                   src=""
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"
                   height="400"
                 />
-                <img
+                <Image
                   src=""
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"
                   height="400"
                 />
-                <img
+                <Image
                   src=""
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"
                   height="400"
                 />
-                <img
+                <Image
                   src=""
                   alt="採用情報"
                   class="fadein-trigger"
@@ -49,9 +52,9 @@ export default function HomeRecruit() {
                     quia, praesentium cum ex earum, in perferendis
                   </p>
                   <div class="btn-box">
-                    <a href="/recruit/" class="btn btn-primary">
+                    <Link href="/recruit/" class="btn btn-primary">
                       <span>採用情報はこちら</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
