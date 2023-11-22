@@ -1196,6 +1196,79 @@ parts
 	}
 }
 
+/* mv */
+#page-mv {
+	position: relative;
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#page-mv::before {
+	content: '';
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#page-mv .mv-inner {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#page-mv .page-ttl-box {
+	padding: 60px 0;
+	text-align: center;
+}
+
+#page-mv .page-ttl {
+	font-size: 6rem;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	font-family: var(--inter);
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+#page-mv .page-sub-ttl {
+	font-family: var(--shippori);
+	font-size: 3.2rem;
+}
+
+@media screen and (min-width: 1920px) {
+	#page-mv {
+		background-position: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#page-mv .mv-inner {
+		padding: 10px 0 90px;
+	}
+
+	#page-mv.about .mv-inner,
+	#page-mv.business .mv-inner,
+	#page-mv.recruit .mv-inner {
+		padding: 10px 0 100px;
+	}
+
+	#page-mv .page-ttl-box {
+		padding-top: 60px;
+	}
+
+	#page-mv .page-ttl {
+		font-size: 4rem;
+	}
+
+	#page-mv .page-sub-ttl {
+		font-size: 2.4rem;
+	}
+}
+
 /* wp-pagenavi */
 .wp-pagenavi {
 	font-size: 1.6rem;
