@@ -1,4 +1,5 @@
 import Header from "../components/Header.js";
+import ModuleMv from "../components/ModuleMv.js";
 import Footer from "../components/Footer.js";
 import RecruitIntro from "../components/RecruitIntro";
 import RecruitOccupation from "../components/RecruitOccupation";
@@ -13,6 +14,7 @@ export default function Recruit() {
     <>
       <Header />
       <main>
+        <ModuleMv />
         <RecruitIntro />
         <RecruitOccupation />
         <RecruitInterview />

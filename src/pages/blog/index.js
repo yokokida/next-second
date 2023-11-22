@@ -1,13 +1,14 @@
 import { client } from "../../libs/client.js";
 import Header from "../../components/Header.js";
+import ModuleMv from "../../components/ModuleMv.js";
 import Footer from "../../components/Footer.js";
-import HomeRecruit from "../../components/HomeRecruit.js";
 
-export default function Home({ blogs }) {
+export default function Blogs({ blogs }) {
   return (
     <>
       <Header />
       <main>
+        <ModuleMv />
         <div>
           <ul>
             {blogs.map((blogs) => (

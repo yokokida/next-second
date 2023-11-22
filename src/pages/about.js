@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import PageMv from "../components/ModuleMv.astro";
+import ModuleMv from "../components/ModuleMv.js";
 import AboutIntro from "../components/AboutIntro.js";
 import AboutOutline from "../components/AboutOutline.js";
 import AboutLicense from "../components/AboutLicense.js";
@@ -12,7 +12,7 @@ export default function About() {
     <>
       <Header />
       <main>
-        <PageMv />
+        <ModuleMv />
         <AboutIntro />
         <AboutOutline />
         <AboutLicense />

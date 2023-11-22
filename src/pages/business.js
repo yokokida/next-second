@@ -1,4 +1,5 @@
 import Header from "../components/Header.js";
+import ModuleMv from "../components/ModuleMv.js";
 import Footer from "../components/Footer.js";
 import BusinessStrength from "../components/BusinessStrength.js";
 import BusinessService from "../components/BusinessService.js";
@@ -11,6 +12,7 @@ export default function Business() {
     <>
       <Header />
       <main>
+        <ModuleMv />
         <BusinessStrength />
         <BusinessService />
         <BusinessClient />
