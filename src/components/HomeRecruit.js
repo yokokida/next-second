@@ -10,28 +10,28 @@ export default function HomeRecruit() {
             <div class="content-box">
               <div class="img-area img-box">
                 <Image
-                  src=""
+                  src="/images/home/recruit_01.jpg"
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"
                   height="400"
                 />
                 <Image
-                  src=""
+                  src="/images/home/recruit_02.jpg"
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"
                   height="400"
                 />
                 <Image
-                  src=""
+                  src="/images/home/recruit_03.jpg"
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"
                   height="400"
                 />
                 <Image
-                  src=""
+                  src="/images/home/recruit_04.jpg"
                   alt="採用情報"
                   class="fadein-trigger"
                   width="317"

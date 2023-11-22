@@ -164,6 +164,7 @@ export default function Footer() {
           <p>&copy;All Rights Reserved.</p>
         </div>
       </footer>
+      <script src="/scripts/myscript.js"></script>
     </>
   );
 }

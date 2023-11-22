@@ -15,7 +15,7 @@ export default function BusinessQuality() {
                   <div class="img-area">
                     <div class="img-box">
                       <Image
-                        src="../images/home/business_03.jpg"
+                        src="/images/home/business_03.jpg"
                         alt="事業内容3"
                         class="fadein-trigger"
                         width="495"

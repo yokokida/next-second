@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function HomeMv() {
   const MvImages = [
-    { img: "../images/home/mv_01.jpg" },
-    { img: "../images/home/mv_02.jpg" },
-    { img: "../images/home/mv_03.jpg" },
+    { img: "/images/home/mv_01.jpg" },
+    { img: "/images/home/mv_02.jpg" },
+    { img: "/images/home/mv_03.jpg" },
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function HomeMv() {
           <div class="img-box">
             <a href="/">
               <Image
-                src="../images/common/logo_01.svg"
+                src="/images/common/logo_01.svg"
                 alt="株式会社"
                 width="120"
                 height="36"

@@ -3,12 +3,12 @@ export default function BusinessArea() {
   const areas = [
     {
       ttl: "U字工事",
-      img: "../images/page/business/strength_11.png",
+      img: "/images/page/business/strength_11.png",
       txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
       ttl: "U字工事",
-      img: "../images/page/business/strength_11.png",
+      img: "/images/page/business/strength_11.png",
       txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
   ];

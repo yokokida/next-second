@@ -1,17 +1,17 @@
 export default function RecruitEnvironment() {
   const environments = [
     {
-      img: "../images/page/recruit/img_01.jpg",
+      img: "/images/page/recruit/img_01.jpg",
       ttl: "教育のサポートが手厚い環境",
       txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-      img: "../images/page/recruit/img_01.jpg",
+      img: "/images/page/recruit/img_01.jpg",
       ttl: "教育のサポートが手厚い環境",
       txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
     {
-      img: "../images/page/recruit/img_01.jpg",
+      img: "/images/page/recruit/img_01.jpg",
       ttl: "教育のサポートが手厚い環境",
       txt: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     },
