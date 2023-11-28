@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeAbout() {
   return (
@@ -19,11 +20,7 @@ export default function HomeAbout() {
                 dolorem aperiam laboriosam nemo eveniet id quod quis architecto?
                 Voluptatem aliquid eligendi consequunturrecusandae laudantium.
               </p>
-              <div class="btn-box">
-                <Link href="/about/" class="btn btn-primary">
-                  <span>会社情報はこちら</span>
-                </Link>
-              </div>
+              <BtnPrimary url="about" txt="会社情報はこちら" class="btn-box" />
             </div>
           </div>
         </div>

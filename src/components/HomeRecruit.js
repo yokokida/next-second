@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeRecruit() {
   return (
@@ -51,11 +52,11 @@ export default function HomeRecruit() {
                     <br />
                     quia, praesentium cum ex earum, in perferendis
                   </p>
-                  <div class="btn-box">
-                    <Link href="/recruit/" class="btn btn-primary">
-                      <span>採用情報はこちら</span>
-                    </Link>
-                  </div>
+                  <BtnPrimary
+                    url="recruit"
+                    txt="採用情報はこちら"
+                    class="btn-box"
+                  />
                 </div>
               </div>
             </div>

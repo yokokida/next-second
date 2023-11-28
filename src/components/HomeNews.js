@@ -1,4 +1,6 @@
 import Link from "next/link";
+import BtnPrimary from "./ModuleBtnPrimary";
+
 export default function HomeBisness() {
   return (
     <>
@@ -36,11 +38,11 @@ export default function HomeBisness() {
                   </div>
                 </div>
               </div>
-              <div class="btn-box right-center">
-                <Link href="/blog/" class="btn btn-primary">
-                  <span>一覧はこちら</span>
-                </Link>
-              </div>
+              <BtnPrimary
+                url="blog"
+                txt="一覧はこちら"
+                class="btn-box right-center"
+              />
             </div>
           </div>
         </div>

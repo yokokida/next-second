@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeBisness() {
   return (
@@ -16,11 +17,11 @@ export default function HomeBisness() {
                   Lorem ipsum dolor sit amet consectetur <br />
                   adipisicing elit. Dignissimos ipsa dolore
                 </p>
-                <div class="btn-box">
-                  <a href="/business/" class="btn btn-primary">
-                    <span>事業内容はこちら</span>
-                  </a>
-                </div>
+                <BtnPrimary
+                  url="business"
+                  txt="事業内容はこちら"
+                  class="btn-box"
+                />
               </div>
               <div class="img-area">
                 <Image

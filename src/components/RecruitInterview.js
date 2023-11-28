@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function RecruitInterview() {
   const interviews = [
@@ -70,11 +71,11 @@ export default function RecruitInterview() {
                 </Link>
               ))}
             </div>
-            <div class="btn-box center-center">
-              <Link href="/interview/" class="btn btn-primary">
-                <span>一覧はこちら</span>
-              </Link>
-            </div>
+            <BtnPrimary
+              url="interview"
+              txt="一覧はこちら"
+              class="btn-box center-center"
+            />
           </div>
         </div>
       </section>
