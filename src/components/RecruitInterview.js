@@ -46,10 +46,7 @@ export default function RecruitInterview() {
           <div class="content-box">
             <div class="m-interview-list">
               {interviews.map((interview) => (
-                <Link
-                  href="/interview/01/"
-                  class="item-box fadein-trigger is-active"
-                >
+                <Link href="/interview/01/" class="item-box fadein-trigger">
                   <div class="img-box">
                     <Image
                       src={interview["img"]}

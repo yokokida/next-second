@@ -3,7 +3,7 @@ ApplySpMenu();
 exLink();
 
 function animationScrollTrigger() {
-  var tgts = document.querySelectorAll(".bg-slide-trigger,.fadein-trigger");
+  var tgts = document.querySelectorAll(".fadein-trigger");
   var observer = new IntersectionObserver(
     function (entries) {
       entries.forEach((entry) => {

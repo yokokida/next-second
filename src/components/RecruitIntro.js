@@ -11,7 +11,7 @@ export default function RecruitIntro() {
                 生活インフラを整えます
                 <br />
                 株式会社OOは、
-                <span class="motion-bg-green bg-slide-trigger is-active">
+                <span class="motion-bg-green bg-slide-trigger">
                   一人一人の尊厳を尊重
                 </span>
                 します。

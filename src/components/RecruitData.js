@@ -1,14 +1,13 @@
 import Image from "next/image";
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function RecruitData() {
   return (
     <>
       <section id="recruit-data">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">data of nsk</h2>
-              <p class="sec-sub-ttl">データで見る株式会社OO</p>
-            </div>
+            <SectionTitle ttl="data of nsk" subttl="データで見る株式会社OO" />
             <div class="content-box">
               <div class="data-container">
                 <div class="img-box">

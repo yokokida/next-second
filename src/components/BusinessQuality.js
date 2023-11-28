@@ -1,14 +1,13 @@
 import Image from "next/image";
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function BusinessQuality() {
   return (
     <>
       <section id="business-quality">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">quality</h2>
-              <p class="sec-sub-ttl">品質方針</p>
-            </div>
+            <SectionTitle ttl="quality" subttl="品質方針" />
             <div class="content-box">
               <div class="m-img-txt-container">
                 <div class="m-img-txt-box">

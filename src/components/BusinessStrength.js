@@ -1,3 +1,5 @@
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function BusinessStrength() {
   const strengthes = [
     {
@@ -22,10 +24,7 @@ export default function BusinessStrength() {
       <section id="business-strength">
         <div class="sec-inner">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">strength</h2>
-              <p class="sec-sub-ttl">強み</p>
-            </div>
+            <SectionTitle ttl="strength" subttl="強み" />
             <div class="content-box">
               <div class="m-example-container col-3">
                 {strengthes.map((strength) => (

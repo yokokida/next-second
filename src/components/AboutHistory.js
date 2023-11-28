@@ -1,3 +1,5 @@
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function AboutOutline() {
   const outlines = [
     {
@@ -21,10 +23,7 @@ export default function AboutOutline() {
     <section id="about-history">
       <div class="sec-inner pt0">
         <div class="content-width">
-          <div class="sec-ttl-box fadein-trigger is-active">
-            <h2 class="sec-ttl">history</h2>
-            <p class="sec-sub-ttl">沿革</p>
-          </div>
+          <SectionTitle ttl="history" subttl="沿革" />
           <div class="content-box">
             <div class="m-dl-container">
               {outlines.map((outline) => (

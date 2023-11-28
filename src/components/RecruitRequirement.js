@@ -1,3 +1,5 @@
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function RecruitIntro() {
   const conditionTable01 = [
     {
@@ -88,10 +90,7 @@ export default function RecruitIntro() {
       <section id="recruit-requirement">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">requirement</h2>
-              <p class="sec-sub-ttl">募集要項</p>
-            </div>
+            <SectionTitle ttl="requirement" subttl="募集要項" />
             <div class="content-box">
               <div class="m-tab-panel">
                 <ul class="tab-group">

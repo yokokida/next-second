@@ -1,3 +1,5 @@
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function RecruitEnvironment() {
   const environments = [
     {
@@ -22,10 +24,7 @@ export default function RecruitEnvironment() {
       <section id="recruit-environment">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">environment</h2>
-              <p class="sec-sub-ttl">働く環境</p>
-            </div>
+            <SectionTitle ttl="environment" subttl="働く環境" />
             <div class="content-box">
               {environments.map((env) => (
                 <div class="m-img-txt-box">

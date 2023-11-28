@@ -1,11 +1,12 @@
 import Image from "next/image";
+import SectionTitle from "./ModuleSectionTitle";
 
 export default function AboutAccess() {
   return (
     <>
       <section id="about-access">
         <div class="sec-inner pt0">
-          <div class="sec-ttl-box fadein-trigger is-active">
+          <div class="sec-ttl-box fadein-trigger">
             <div class="content-width">
               <h2 class="sec-ttl">access</h2>
               <p class="sec-sub-ttl">アクセス</p>

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function BusinessService() {
   const services = [
     {
@@ -32,10 +34,7 @@ export default function BusinessService() {
       <section id="business-service">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">service</h2>
-              <p class="sec-sub-ttl">サービス</p>
-            </div>
+            <SectionTitle ttl="service" subttl="サービス" />
             <div class="content-box">
               <div class="m-service-container">
                 {services.map((service) => (

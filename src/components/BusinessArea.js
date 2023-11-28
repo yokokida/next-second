@@ -1,4 +1,6 @@
 import Image from "next/image";
+import SectionTitle from "./ModuleSectionTitle";
+
 export default function BusinessArea() {
   const areas = [
     {
@@ -18,10 +20,7 @@ export default function BusinessArea() {
       <section id="business-area">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <div class="sec-ttl-box fadein-trigger is-active">
-              <h2 class="sec-ttl">area</h2>
-              <p class="sec-sub-ttl">対応エリア</p>
-            </div>
+            <SectionTitle ttl="area" subttl="対応エリア" />
             <div class="content-box">
               <div class="m-example-container col-2">
                 {areas.map((area) => (
