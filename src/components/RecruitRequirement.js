@@ -1,7 +1,7 @@
 import SectionTitle from "./ModuleSectionTitle";
 
 export default function RecruitIntro() {
-  const conditionTable01 = [
+  const studentConditionTables = [
     {
       head: "業務内容",
       cont: "ダミーテキストダミーテキスト",
@@ -43,7 +43,7 @@ export default function RecruitIntro() {
       cont: "ページ下部の応募フォームよりご応募ください。選考のうえ追ってご連絡いたします。",
     },
   ];
-  const conditionTable02 = [
+  const careerConditionTables = [
     {
       head: "業務内容",
       cont: "ダミーテキストダミーテキスト",
@@ -105,7 +105,7 @@ export default function RecruitIntro() {
                   <div class="panel is-show">
                     <h3 class="ttl ttl-large">新卒採用</h3>
                     <div class="m-dl-container">
-                      {conditionTable01.map((condition) => (
+                      {studentConditionTables.map((condition) => (
                         <dl>
                           <dt>{condition["head"]}</dt>
                           <dd>{condition["cont"]}</dd>
@@ -116,7 +116,7 @@ export default function RecruitIntro() {
                   <div class="panel">
                     <h3 class="ttl ttl-large">中途採用</h3>
                     <div class="m-dl-container">
-                      {conditionTable02.map((condition) => (
+                      {careerConditionTables.map((condition) => (
                         <dl>
                           <dt>{condition["head"]}</dt>
                           <dd>{condition["cont"]}</dd>

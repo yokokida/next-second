@@ -1,8 +1,34 @@
 import Image from "next/image";
-import Link from "next/link";
 import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeRecruit() {
+  const images = [
+    {
+      src: "/images/home/recruit_01.jpg",
+      alt: "採用情報",
+      width: "317",
+      height: "400",
+    },
+    {
+      src: "/images/home/recruit_02.jpg",
+      alt: "採用情報",
+      width: "317",
+      height: "400",
+    },
+    {
+      src: "/images/home/recruit_03.jpg",
+      alt: "採用情報",
+      width: "317",
+      height: "400",
+    },
+    {
+      src: "/images/home/recruit_04.jpg",
+      alt: "採用情報",
+      width: "317",
+      height: "400",
+    },
+  ];
+
   return (
     <>
       <section id="home-recruit">
@@ -10,34 +36,15 @@ export default function HomeRecruit() {
           <div class="content-width">
             <div class="content-box">
               <div class="img-area img-box">
-                <Image
-                  src="/images/home/recruit_01.jpg"
-                  alt="採用情報"
-                  class="fadein-trigger"
-                  width="317"
-                  height="400"
-                />
-                <Image
-                  src="/images/home/recruit_02.jpg"
-                  alt="採用情報"
-                  class="fadein-trigger"
-                  width="317"
-                  height="400"
-                />
-                <Image
-                  src="/images/home/recruit_03.jpg"
-                  alt="採用情報"
-                  class="fadein-trigger"
-                  width="317"
-                  height="400"
-                />
-                <Image
-                  src="/images/home/recruit_04.jpg"
-                  alt="採用情報"
-                  class="fadein-trigger"
-                  width="317"
-                  height="400"
-                />
+                {images.map((img) => (
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    class="fadein-trigger"
+                    width={img.width}
+                    height={img.height}
+                  />
+                ))}
               </div>
               <div class="txt-area">
                 <div class="sec-ttl-box left-center fadein-trigger">

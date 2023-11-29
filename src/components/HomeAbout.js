@@ -1,4 +1,3 @@
-import Link from "next/link";
 import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeAbout() {

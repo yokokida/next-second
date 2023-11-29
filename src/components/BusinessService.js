@@ -29,6 +29,24 @@ export default function BusinessService() {
     },
   ];
 
+  const images = [
+    {
+      src: "/images/home/business_01.jpg",
+      width: "428",
+      height: "379",
+    },
+    {
+      src: "/images/home/business_02.jpg",
+      width: "428",
+      height: "509",
+    },
+    {
+      src: "/images/home/business_03.jpg",
+      width: "550",
+      height: "292",
+    },
+  ];
+
   return (
     <>
       <section id="business-service">
@@ -45,27 +63,15 @@ export default function BusinessService() {
                 ))}
               </div>
               <div class="img-area">
-                <Image
-                  src="/images/home/business_01.jpg"
-                  alt="事業内容1"
-                  class="fadein-trigger"
-                  width="428"
-                  height="379"
-                />
-                <Image
-                  src="/images/home/business_02.jpg"
-                  alt="事業内容2"
-                  class="fadein-trigger"
-                  width="428"
-                  height="509"
-                />
-                <Image
-                  src="/images/home/business_03.jpg"
-                  alt="事業内容3"
-                  class="fadein-trigger"
-                  width="550"
-                  height="292"
-                />
+                {images.map((img) => (
+                  <Image
+                    src={img.src}
+                    alt="事業内容"
+                    class="fadein-trigger"
+                    width={img.width}
+                    height={img.height}
+                  />
+                ))}
               </div>
             </div>
           </div>

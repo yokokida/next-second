@@ -8,6 +8,29 @@ export default function HomeMv() {
     { img: "/images/home/mv_03.jpg" },
   ];
 
+  const menus = [
+    {
+      url: "/",
+      txt: "トップ",
+    },
+    {
+      url: "/about/",
+      txt: "私たちについて",
+    },
+    {
+      url: "/business/",
+      txt: "事業紹介",
+    },
+    {
+      url: "/info/",
+      txt: "お知らせ",
+    },
+    {
+      url: "/contact/",
+      txt: "お問い合わせ",
+    },
+  ];
+
   return (
     <>
       <div id="home-header">
@@ -25,21 +48,11 @@ export default function HomeMv() {
         </div>
         <nav class="nav-box">
           <ul id="menu-g-nav-1" class="h-menu">
-            <li class="menu-item">
-              <Link href="/">トップ</Link>
-            </li>
-            <li class="menu-item">
-              <Link href="/about/">私たちについて</Link>
-            </li>
-            <li class="menu-item">
-              <Link href="/business/">事業紹介</Link>
-            </li>
-            <li class="menu-item">
-              <Link href="/info/">お知らせ</Link>
-            </li>
-            <li class="menu-item">
-              <Link href="/contact/">お問い合わせ</Link>
-            </li>
+            {menus.map((menu) => (
+              <li class="menu-item">
+                <Link href={menu.url}>{menu.txt}</Link>
+              </li>
+            ))}
           </ul>
           <Link href="/recruit/" class="btn-recruit">
             <span>採用情報</span>

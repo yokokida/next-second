@@ -1,6 +1,21 @@
 import SectionTitle from "./ModuleSectionTitle";
 
 export default function BusinessClient() {
+  const clients = [
+    {
+      ttl: "△△△株式会社",
+    },
+    {
+      ttl: "△△△株式会社",
+    },
+    {
+      ttl: "△△△株式会社",
+    },
+    {
+      ttl: "△△△株式会社",
+    },
+  ];
+
   return (
     <>
       <section id="business-client">
@@ -9,10 +24,9 @@ export default function BusinessClient() {
             <SectionTitle ttl="client" subttl="主要取引先" />
             <div class="content-box">
               <div class="m-rectangle-container">
-                <div class="item-box">△△△株式会社</div>
-                <div class="item-box">△△△株式会社</div>
-                <div class="item-box">△△△株式会社</div>
-                <div class="item-box">△△△株式会社</div>
+                {clients.map((client) => (
+                  <div class="item-box">{client["ttl"]}</div>
+                ))}
               </div>
             </div>
           </div>

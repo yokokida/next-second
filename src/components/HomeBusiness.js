@@ -2,6 +2,27 @@ import Image from "next/image";
 import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeBisness() {
+  const images = [
+    {
+      src: "/images/home/business_01.jpg",
+      alt: "事業内容1",
+      width: "428",
+      height: "379",
+    },
+    {
+      src: "/images/home/business_02.jpg",
+      alt: "事業内容1",
+      width: "428",
+      height: "509",
+    },
+    {
+      src: "/images/home/business_03.jpg",
+      alt: "事業内容1",
+      width: "550",
+      height: "292",
+    },
+  ];
+
   return (
     <>
       <section id="home-business">
@@ -24,27 +45,15 @@ export default function HomeBisness() {
                 />
               </div>
               <div class="img-area">
-                <Image
-                  src="/images/home/business_01.jpg"
-                  alt="事業内容1"
-                  class="fadein-trigger"
-                  width="428"
-                  height="379"
-                />
-                <Image
-                  src="/images/home/business_02.jpg"
-                  alt="事業内容1"
-                  class="fadein-trigger"
-                  width="428"
-                  height="509"
-                />
-                <Image
-                  src="/images/home/business_03.jpg"
-                  alt="事業内容1"
-                  class="fadein-trigger"
-                  width="550"
-                  height="292"
-                />
+                {images.map((img) => (
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    class="fadein-trigger"
+                    width={img.width}
+                    height={img.height}
+                  />
+                ))}
               </div>
             </div>
           </div>
