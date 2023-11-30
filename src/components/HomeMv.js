@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
+SwiperCore.use([Navigation]);
+import "swiper/css";
 
 export default function HomeMv() {
   const MvImages = [
-    { img: "/images/home/mv_01.jpg" },
-    { img: "/images/home/mv_02.jpg" },
-    { img: "/images/home/mv_03.jpg" },
+    { src: "/images/home/mv_01.jpg" },
+    { src: "/images/home/mv_02.jpg" },
+    { src: "/images/home/mv_03.jpg" },
   ];
-
   const menus = [
     {
       url: "/",
@@ -30,7 +33,6 @@ export default function HomeMv() {
       txt: "お問い合わせ",
     },
   ];
-
   return (
     <>
       <div id="home-header">
@@ -62,12 +64,12 @@ export default function HomeMv() {
       <div id="home-mv">
         <div class="mv-inner">
           <div id="home-mv-slider" class="m-swiper-container">
-            <div class="swiper">
+            {/* <div class="swiper">
               <div class="swiper-wrapper">
                 {MvImages.map((img) => (
                   <div class="swiper-slide">
                     <Image
-                      src={img}
+                      src={img.src}
                       alt="株式会社"
                       class="fadein-trigger"
                       width="1900"
@@ -76,7 +78,25 @@ export default function HomeMv() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
+            <Swiper
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              loop={true}
+            >
+              {MvImages.map((img) => (
+                <SwiperSlide>
+                  <Image
+                    src={img.src}
+                    width={1900}
+                    height={1266}
+                    // className="fadein-trigger"
+                    alt="ASTRO"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
           <div class="txt-area">
             <p class="txt">

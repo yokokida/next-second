@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SectionTitle } from "./ModuleSectionTitle";
 import BtnPrimary from "./ModuleBtnPrimary";
 
 export default function HomeBisness() {
@@ -8,10 +9,7 @@ export default function HomeBisness() {
         <div class="sec-inner">
           <div class="content-width">
             <div class="sec-ttl-wrapper left-center">
-              <div class="sec-ttl-box fadein-trigger">
-                <h2 class="sec-ttl">news</h2>
-                <p class="sec-sub-ttl">お知らせ</p>
-              </div>
+              <SectionTitle ttl="news" subttl="お知らせ" />
               <div class="post-cats">
                 <span class="post-cat tab">すべて</span>
               </div>

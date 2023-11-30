@@ -1,16 +1,12 @@
 import Image from "next/image";
+import { SectionTitleContentWidth } from "./ModuleSectionTitle";
 
 export default function AboutAccess() {
   return (
     <>
       <section id="about-access">
         <div class="sec-inner pt0">
-          <div class="sec-ttl-box fadein-trigger">
-            <div class="content-width">
-              <h2 class="sec-ttl">access</h2>
-              <p class="sec-sub-ttl">アクセス</p>
-            </div>
-          </div>
+          <SectionTitleContentWidth ttl="access" subttl="アクセス" />
           <div class="content-box">
             <div class="content-width-narrow">
               <div class="headquarters">

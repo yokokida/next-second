@@ -1,4 +1,4 @@
-import SectionTitle from "./ModuleSectionTitle";
+import { SectionTitle } from "./ModuleSectionTitle";
 
 export default function AboutLicense() {
   const licenses = [

@@ -1,4 +1,5 @@
 import BtnPrimary from "./ModuleBtnPrimary";
+import { SectionTitleVertical } from "./ModuleSectionTitle";
 
 export default function HomeAbout() {
   return (
@@ -6,10 +7,7 @@ export default function HomeAbout() {
       <div id="home-about">
         <div class="sec-inner">
           <div class="content-width">
-            <div class="sec-ttl-box vertical left-center fadein-trigger">
-              <h2 class="sec-ttl">about us</h2>
-              <p class="sec-sub-ttl">私たちについて</p>
-            </div>
+            <SectionTitleVertical ttl="about us" subttl="私たちについて" />
             <div class="content-box">
               <p class="txt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionTitle from "./ModuleSectionTitle";
+import { SectionTitle } from "./ModuleSectionTitle";
 
 export default function BusinessQuality() {
   return (

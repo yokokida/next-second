@@ -1,5 +1,5 @@
 import ModuleForm from "../components/ModuleForm";
-import SectionTitle from "./ModuleSectionTitle";
+import { SectionTitle } from "./ModuleSectionTitle";
 
 export default function RecruitForm() {
   return (
