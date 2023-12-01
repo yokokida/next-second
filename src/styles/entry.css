@@ -13,13 +13,13 @@ entry-article
 	justify-content: space-between;
 }
 
-#article-container.has-sidebar article {
+#article-container.has-sidebar #entry-article {
 	box-sizing: border-box;
 	width: 70%;
 	padding-right: 20px;
 }
 
-#article-container.has-sidebar aside {
+#article-container.has-sidebar #entry-sidebar {
 	width: 30%;
 	padding-left: 20px;
 	box-sizing: border-box;
@@ -27,8 +27,8 @@ entry-article
 
 @media screen and (max-width: 767px) {
 
-	#article-container.has-sidebar article,
-	#article-container.has-sidebar aside {
+	#article-container.has-sidebar #entry-article,
+	#article-container.has-sidebar #entry-sidebar {
 		width: 100%;
 		padding: 0;
 	}
