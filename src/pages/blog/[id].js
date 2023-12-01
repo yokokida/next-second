@@ -21,7 +21,7 @@ export async function getStaticProps(context) {
   };
 }
 
-export default function BlogId() {
+export default function BlogId({ blog }) {
   return (
     <>
       <Header />
@@ -33,37 +33,43 @@ export default function BlogId() {
               <div id="entry-article">
                 <div class="entry-ttl-box">
                   <div class="post-meta">
-                    <time datetime="2023.8.29" class="post-date">
-                      2023.8.29
+                    <time datetime={blog.publishedAt} class="post-date">
+                      {blog.publishedAt}
                     </time>
                     <div class="post-cats">
-                      <a class="post-cat" href="/info/">
-                        お知らせ
+                      <a class="post-cat" href="/blog/">
+                        {blog.category.name}
                       </a>
                     </div>
                   </div>
-                  <h1 class="post-ttl">ホームページをリニューアルしました</h1>
+                  <h1 class="post-ttl">{blog.title}</h1>
                 </div>
 
-                <div class="entry-content"></div>
+                <div
+                  class="entry-content"
+                  dangerouslySetInnerHTML={{
+                    __html: `${blog.content}`,
+                  }}
+                ></div>
 
                 <div id="nav-below">
                   <span>前の記事はありません</span>
-                  <a href="/info/" class="btn btn-border pc-only">
+                  <a href="/blog/" class="btn btn-border pc-only">
                     <span>一覧に戻る</span>
                   </a>
                   <span>次の記事はありません</span>
                 </div>
-                <a href="/info/" class="btn btn-border sp-only">
+                <a href="/blog/" class="btn btn-border sp-only">
                   <span>一覧に戻る</span>
                 </a>
               </div>
+
               <div id="entry-sidebar">
                 <div class="sidebar-container">
                   <h2 class="head">カテゴリー</h2>
                   <div class="cont">
                     <div class="post-cats">
-                      <a class="post-cat" href="/info/">
+                      <a class="post-cat" href="/blog/">
                         お知らせ
                       </a>
                     </div>
@@ -73,23 +79,26 @@ export default function BlogId() {
                   <h2 class="head">最新の記事</h2>
                   <div class="cont">
                     <div class="m-side-container">
-                      <div class="item-box post-26 post type-post status-publish format-standard hentry category-info">
+                      <div class="item-box post-26 post type-post status-publish format-standard hentry category-blog">
                         <div class="post-thumb">
-                          <a href="/info/26/" class="img-box">
+                          <a href="/blog/26/" class="img-box">
                             <img
                               src="/wp-content/themes/nsk-theme/images/common/noimage.jpg"
                               alt="ホームページをリニューアルしました"
                             />
                           </a>
                         </div>
-                        <div class="post-info">
+                        <div class="post-blog">
                           <div class="post-meta">
-                            <time datetime="2023.8.29" class="post-date">
-                              2023.8.29
+                            <time
+                              datetime="{blog.publishedAt}"
+                              class="post-date"
+                            >
+                              {blog.publishedAt}
                             </time>
                           </div>
                           <h3 class="post-ttl">
-                            <a href="/info/26/">
+                            <a href="/blog/26/">
                               ホームページをリニューアルしました
                             </a>
                           </h3>
