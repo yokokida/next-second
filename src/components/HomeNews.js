@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { SectionTitle } from "./ModuleSectionTitle";
-import BtnPrimary from "./ModuleBtnPrimary";
+import { SectionTitle } from "./ModuleSectionTitle.js";
+import BtnPrimary from "./ModuleBtnPrimary.js";
 
-export default function HomeBisness() {
+export default function HomeBisness({ blogs }) {
   return (
     <>
       <section id="home-news">
@@ -16,25 +16,24 @@ export default function HomeBisness() {
             </div>
             <div class="content-box">
               <div class="m-post-container panel is-show">
-                <div class="item-box">
-                  <div class="post-info">
-                    <div class="post-meta">
-                      <time datetime="2023.8.1" class="post-date">
-                        2023.8.1
-                      </time>
-                      <div class="post-cats">
-                        <Link href="/blog/" class="post-cat">
-                          お知らせ
-                        </Link>
+                {blogs}
+                {/* {blogs.map((blogs) => (
+                  <div class="item-box">
+                    <div class="post-info">
+                      <div class="post-meta">
+                        <time datetime="2023.8.1" class="post-date">
+                          2023.8.1
+                        </time>
+                        <div class="post-cats">
+                          <Link class="post-cat">お知らせ</Link>
+                        </div>
                       </div>
+                      <h3 class="post-ttl">
+                        <Link>{blogs.title}</Link>
+                      </h3>
                     </div>
-                    <h3 class="post-ttl">
-                      <Link href="/blog/26/">
-                        ホームページをリニューアルしました
-                      </Link>
-                    </h3>
                   </div>
-                </div>
+                ))} */}
               </div>
               <BtnPrimary
                 url="blog"
