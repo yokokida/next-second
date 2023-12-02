@@ -5,7 +5,10 @@ export default function LoopPost(props) {
         <div class="post-info">
           <div class="post-meta">
             <time datetime={props.publishedAt} class="post-date">
-              {props.publishedAt}
+              {new Date(props.publishedAt)
+                .toLocaleDateString("ja-JP")
+                .split("/")
+                .join(".")}
             </time>
             <div class="post-cats">
               <span class="post-cat">{props.categoryName}</span>
