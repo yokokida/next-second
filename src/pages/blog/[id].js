@@ -12,14 +12,19 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const id = context.params.id;
+
   const dataContent = await client.get({ endpoint: "blogs", contentId: id });
   const dataBlog = await client.get({ endpoint: "blogs" });
   const dataCategory = await client.get({ endpoint: "categories" });
+
   return {
     props: {
       post: dataContent,
       blogs: dataBlog.contents,
       categories: dataCategory.contents,
+      // currentPost,
+      // prevPost,
+      // nextPost,
     },
   };
 }
