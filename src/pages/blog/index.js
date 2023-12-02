@@ -1,8 +1,9 @@
-import { client } from "../../libs/client.js";
-import Header from "../../components/Header.js";
-import ModuleMv from "../../components/ModuleMv.js";
-import Footer from "../../components/Footer.js";
+import { client } from "@/libs/client.js";
+import Header from "@/components/Header.js";
+import ModuleMv from "@/components/ModuleMv.js";
+import Footer from "@/components/Footer.js";
 import LoopPost from "@/components/LoopPost.js";
+import ModulePagenation from "@/components/ModulePagenation.js";
 
 export async function getStaticProps() {
   const data = await client.get({ endpoint: "blogs" });
@@ -32,11 +33,7 @@ export default function Blogs({ blogs }) {
                 />
               ))}
             </div>
-            <div class="wp-pagenavi" role="navigation">
-              <span aria-current="page" class="current">
-                1
-              </span>
-            </div>
+            <ModulePagenation totalCount={20} />
           </div>
         </div>
       </main>
