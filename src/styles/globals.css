@@ -1282,7 +1282,7 @@ parts
 }
 
 .wp-pagenavi a,
-.wp-pagenavi span {
+.wp-pagenavi .item {
 	border: 1px solid var(--white);
 	font-family: var(--inter);
 	width: 32px;
@@ -1290,7 +1290,7 @@ parts
 	transition: all .5s ease;
 }
 
-.wp-pagenavi span {
+.wp-pagenavi .item {
 	text-decoration: none;
 	opacity: 1;
 	color: var(--black);

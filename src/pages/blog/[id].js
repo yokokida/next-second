@@ -1,27 +1,30 @@
-import { client } from "../../libs/client.js";
-import Header from "../../components/Header.js";
-import ModuleMv from "../../components/ModuleMv.js";
-import Footer from "../../components/Footer.js";
+import { client } from "@/libs/client.js";
+import Header from "@/components/Header.js";
+import ModuleMv from "@/components/ModuleMv.js";
+import Footer from "@/components/Footer.js";
+import { Sidebox, SideCategory, SidePost } from "@/components/Sidebar";
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
   const data = await client.get({ endpoint: "blogs" });
-
   const paths = data.contents.map((content) => `/blog/${content.id}`);
   return { paths, fallback: false };
-};
+}
 
 export async function getStaticProps(context) {
   const id = context.params.id;
-  const data = await client.get({ endpoint: "blogs", contentId: id });
-
+  const dataContent = await client.get({ endpoint: "blogs", contentId: id });
+  const dataBlog = await client.get({ endpoint: "blogs" });
+  const dataCategory = await client.get({ endpoint: "categories" });
   return {
     props: {
-      blog: data,
+      post: dataContent,
+      blogs: dataBlog.contents,
+      categories: dataCategory.contents,
     },
   };
 }
 
-export default function BlogId({ blog }) {
+export default function Blog({ post, blogs, categories }) {
   return (
     <>
       <Header />
@@ -33,22 +36,25 @@ export default function BlogId({ blog }) {
               <div id="entry-article">
                 <div class="entry-ttl-box">
                   <div class="post-meta">
-                    <time datetime={blog.publishedAt} class="post-date">
-                      {blog.publishedAt}
+                    <time datetime={post.publishedAt} class="post-date">
+                      {new Date(post.publishedAt)
+                        .toLocaleDateString("ja-JP")
+                        .split("/")
+                        .join(".")}
                     </time>
                     <div class="post-cats">
                       <a class="post-cat" href="/blog/">
-                        {blog.category.name}
+                        {post.category.name}
                       </a>
                     </div>
                   </div>
-                  <h1 class="post-ttl">{blog.title}</h1>
+                  <h1 class="post-ttl">{post.title}</h1>
                 </div>
 
                 <div
                   class="entry-content"
                   dangerouslySetInnerHTML={{
-                    __html: `${blog.content}`,
+                    __html: `${post.content}`,
                   }}
                 ></div>
 
@@ -65,48 +71,24 @@ export default function BlogId({ blog }) {
               </div>
 
               <div id="entry-sidebar">
-                <div class="sidebar-container">
-                  <h2 class="head">カテゴリー</h2>
-                  <div class="cont">
-                    <div class="post-cats">
-                      <a class="post-cat" href="/blog/">
-                        お知らせ
-                      </a>
-                    </div>
+                <Sidebox head="カテゴリー">
+                  <div class="post-cats">
+                    {categories.map((category) => (
+                      <SideCategory link={category.id} name={category.name} />
+                    ))}
                   </div>
-                </div>
-                <div class="sidebar-container">
-                  <h2 class="head">最新の記事</h2>
-                  <div class="cont">
-                    <div class="m-side-container">
-                      <div class="item-box post-26 post type-post status-publish format-standard hentry category-blog">
-                        <div class="post-thumb">
-                          <a href="/blog/26/" class="img-box">
-                            <img
-                              src="/wp-content/themes/nsk-theme/images/common/noimage.jpg"
-                              alt="ホームページをリニューアルしました"
-                            />
-                          </a>
-                        </div>
-                        <div class="post-blog">
-                          <div class="post-meta">
-                            <time
-                              datetime="{blog.publishedAt}"
-                              class="post-date"
-                            >
-                              {blog.publishedAt}
-                            </time>
-                          </div>
-                          <h3 class="post-ttl">
-                            <a href="/blog/26/">
-                              ホームページをリニューアルしました
-                            </a>
-                          </h3>
-                        </div>
-                      </div>
-                    </div>
+                </Sidebox>
+                <Sidebox head="最新記事">
+                  <div class="m-side-container">
+                    {blogs.map((blog) => (
+                      <SidePost
+                        link={`/blog/${blog.id}`}
+                        publishedAt={blog.publishedAt}
+                        title={blog.title}
+                      />
+                    ))}
                   </div>
-                </div>
+                </Sidebox>
               </div>
             </div>
           </div>

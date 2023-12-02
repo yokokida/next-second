@@ -7,7 +7,7 @@ export default function RecruitData() {
       <section id="recruit-data">
         <div class="sec-inner pt0">
           <div class="content-width">
-            <SectionTitle ttl="data of nsk" subttl="データで見る株式会社OO" />
+            <SectionTitle ttl="data of oo" subttl="データで見る株式会社OO" />
             <div class="content-box">
               <div class="data-container">
                 <div class="img-box">

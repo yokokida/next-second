@@ -16,7 +16,6 @@ export default function HomeBisness({ blogs }) {
             </div>
             <div class="content-box">
               <div class="m-post-container panel is-show">
-                {blogs}
                 {/* {blogs.map((blogs) => (
                   <div class="item-box">
                     <div class="post-info">
