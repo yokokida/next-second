@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { SectionTitle } from "./ModuleSectionTitle.js";
 import BtnPrimary from "./ModuleBtnPrimary.js";
 
-export default function HomeBisness({ blogs }) {
+export default function HomeNews() {
   return (
     <>
       <section id="home-news">
