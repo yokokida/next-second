@@ -1,10 +1,10 @@
-import Header from "../components/Header.js";
-import Footer from "../components/Footer.js";
-import HomeMv from "../components/HomeMv.js";
-import HomeAbout from "../components/HomeAbout.js";
-import HomeBusiness from "../components/HomeBusiness.js";
-import HomeNews from "../components/HomeNews.js";
-import HomeRecruit from "../components/HomeRecruit.js";
+import Header from "@/components/Header.js";
+import Footer from "@/components/Footer.js";
+import HomeMv from "@/components/HomeMv.js";
+import HomeAbout from "@/components/HomeAbout.js";
+import HomeBusiness from "@/components/HomeBusiness.js";
+import HomeNews from "@/components/HomeNews.js";
+import HomeRecruit from "@/components/HomeRecruit.js";
 
 export default function Home() {
   return (
