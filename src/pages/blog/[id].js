@@ -14,6 +14,27 @@ export async function getStaticProps(context) {
   const id = context.params.id;
 
   const dataContent = await client.get({ endpoint: "blogs", contentId: id });
+
+  const fields = "id,title,publishedAt";
+  const prev = await client.get({
+    endpoint: "blogs",
+    queries: {
+      limit: 1,
+      orders: "-publishedAt",
+      fields,
+      filters: `publishedAt[less_than]${dataContent.publishedAt}`,
+    },
+  });
+  const next = await client.get({
+    endpoint: "blogs",
+    queries: {
+      limit: 1,
+      orders: "publishedAt",
+      fields,
+      filters: `publishedAt[greater_than]${dataContent.publishedAt}`,
+    },
+  });
+
   const dataBlog = await client.get({ endpoint: "blogs" });
   const dataCategory = await client.get({ endpoint: "categories" });
 
@@ -22,14 +43,13 @@ export async function getStaticProps(context) {
       post: dataContent,
       blogs: dataBlog.contents,
       categories: dataCategory.contents,
-      // currentPost,
-      // prevPost,
-      // nextPost,
+      prevPost: prev.contents[0] || {},
+      nextPost: next.contents[0] || {},
     },
   };
 }
 
-export default function Blog({ post, blogs, categories }) {
+export default function Blog({ post, prevPost, nextPost, blogs, categories }) {
   return (
     <>
       <Header />
@@ -64,11 +84,11 @@ export default function Blog({ post, blogs, categories }) {
                 ></div>
 
                 <div id="nav-below">
-                  <span>前の記事はありません</span>
+                  <span>{prevPost.title}</span>
                   <a href="/blog/" class="btn btn-border pc-only">
                     <span>一覧に戻る</span>
                   </a>
-                  <span>次の記事はありません</span>
+                  <span>{nextPost.title}</span>
                 </div>
                 <a href="/blog/" class="btn btn-border sp-only">
                   <span>一覧に戻る</span>
