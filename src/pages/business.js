@@ -9,7 +9,7 @@ import BusinessQuality from "../components/BusinessQuality.js";
 
 export default function Business() {
   return (
-    <>
+    <div id="wrapper">
       <Header />
       <main>
         <ModuleMv />
@@ -20,6 +20,6 @@ export default function Business() {
         <BusinessQuality />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

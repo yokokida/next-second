@@ -9,7 +9,7 @@ import AboutAccess from "../components/AboutAccess.js";
 
 export default function About() {
   return (
-    <>
+    <div id="wrapper">
       <Header />
       <main>
         <ModuleMv />
@@ -20,6 +20,6 @@ export default function About() {
         <AboutAccess />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

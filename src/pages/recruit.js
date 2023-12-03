@@ -11,7 +11,7 @@ import RecruitForm from "../components/RecruitForm";
 
 export default function Recruit() {
   return (
-    <>
+    <div id="wrapper">
       <Header />
       <main>
         <ModuleMv />
@@ -24,6 +24,6 @@ export default function Recruit() {
         <RecruitForm />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
