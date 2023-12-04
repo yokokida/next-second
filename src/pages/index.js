@@ -28,31 +28,29 @@ export default function Home({ blogs }) {
         <HomeAbout />
         <HomeBusiness />
         <section id="home-news">
-          <div class="sec-inner">
-            <div class="content-width">
-              <div class="sec-ttl-wrapper left-center">
-                <SectionTitle ttl="news" subttl="お知らせ" />
-                <div class="post-cats">
-                  <span class="post-cat tab">すべて</span>
-                </div>
+          <div class="sec-inner content-width">
+            <div class="sec-ttl-wrapper left-center">
+              <SectionTitle ttl="news" subttl="お知らせ" />
+              <div class="post-cats">
+                <span class="post-cat tab">すべて</span>
               </div>
-              <div class="content-box">
-                <div class="m-post-container panel is-show">
-                  {blogs.map((content) => (
-                    <LoopPost
-                      id={content.id}
-                      publishedAt={content.publishedAt}
-                      categoryName={content.category.name}
-                      title={content.title}
-                    />
-                  ))}
-                </div>
-                <BtnPrimary
-                  url="blog"
-                  txt="一覧はこちら"
-                  class="btn-box right-center"
-                />
+            </div>
+            <div class="content-box">
+              <div class="m-post-container panel is-show">
+                {blogs.map((content) => (
+                  <LoopPost
+                    id={content.id}
+                    publishedAt={content.publishedAt}
+                    categoryName={content.category.name}
+                    title={content.title}
+                  />
+                ))}
               </div>
+              <BtnPrimary
+                url="blog"
+                txt="一覧はこちら"
+                class="btn-box right-center"
+              />
             </div>
           </div>
         </section>

@@ -22,29 +22,27 @@ export default function RecruitIntro() {
   return (
     <>
       <section id="recruit-occupation">
-        <div class="sec-inner pt0">
-          <div class="content-width">
-            <SectionTitle ttl="occupation" subttl="職種を知る" />
-            <div class="content-box">
-              {occupations.map((occupation) => (
-                <div class="m-img-txt-box">
-                  <div class="img-area">
-                    <div class="img-box">
-                      <Image
-                        src={occupation["img"]}
-                        alt="対応エリア"
-                        width="500"
-                        height="333"
-                      />
-                    </div>
-                  </div>
-                  <div class="txt-area">
-                    <h3 class="title">{occupation["ttl"]}</h3>
-                    <div class="txt">{occupation["txt"]}</div>
+        <div class="sec-inner content-width pt0">
+          <SectionTitle ttl="occupation" subttl="職種を知る" />
+          <div class="content-box">
+            {occupations.map((occupation) => (
+              <div class="m-img-txt-box">
+                <div class="img-area">
+                  <div class="img-box">
+                    <Image
+                      src={occupation["img"]}
+                      alt="対応エリア"
+                      width="500"
+                      height="333"
+                    />
                   </div>
                 </div>
-              ))}
-            </div>
+                <div class="txt-area">
+                  <h3 class="title">{occupation["ttl"]}</h3>
+                  <div class="txt">{occupation["txt"]}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

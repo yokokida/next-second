@@ -50,29 +50,27 @@ export default function BusinessService() {
   return (
     <>
       <section id="business-service">
-        <div class="sec-inner pt0">
-          <div class="content-width">
-            <SectionTitle ttl="service" subttl="サービス" />
-            <div class="content-box">
-              <div class="m-service-container">
-                {services.map((service) => (
-                  <div class="item-box">
-                    <h3 class="ttl">{service["ttl"]}</h3>
-                    <p class="txt">{service["txt"]}</p>
-                  </div>
-                ))}
-              </div>
-              <div class="img-area">
-                {images.map((img) => (
-                  <Image
-                    src={img.src}
-                    alt="事業内容"
-                    class="fadein-trigger"
-                    width={img.width}
-                    height={img.height}
-                  />
-                ))}
-              </div>
+        <div class="sec-inner content-width pt0">
+          <SectionTitle ttl="service" subttl="サービス" />
+          <div class="content-box">
+            <div class="m-service-container">
+              {services.map((service) => (
+                <div class="item-box">
+                  <h3 class="ttl">{service["ttl"]}</h3>
+                  <p class="txt">{service["txt"]}</p>
+                </div>
+              ))}
+            </div>
+            <div class="img-area">
+              {images.map((img) => (
+                <Image
+                  src={img.src}
+                  alt="事業内容"
+                  class="fadein-trigger"
+                  width={img.width}
+                  height={img.height}
+                />
+              ))}
             </div>
           </div>
         </div>

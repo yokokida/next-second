@@ -88,41 +88,39 @@ export default function RecruitIntro() {
   return (
     <>
       <section id="recruit-requirement">
-        <div class="sec-inner pt0">
-          <div class="content-width">
-            <SectionTitle ttl="requirement" subttl="募集要項" />
-            <div class="content-box">
-              <div class="m-tab-panel">
-                <ul class="tab-group">
-                  <li class="tab is-active">
-                    <span>新卒採用</span>
-                  </li>
-                  <li class="tab">
-                    <span>中途採用</span>
-                  </li>
-                </ul>
-                <div class="panel-group">
-                  <div class="panel is-show">
-                    <h3 class="ttl ttl-large">新卒採用</h3>
-                    <div class="m-dl-container">
-                      {studentConditionTables.map((condition) => (
-                        <dl>
-                          <dt>{condition["head"]}</dt>
-                          <dd>{condition["cont"]}</dd>
-                        </dl>
-                      ))}
-                    </div>
+        <div class="sec-inner content-width pt0">
+          <SectionTitle ttl="requirement" subttl="募集要項" />
+          <div class="content-box">
+            <div class="m-tab-panel">
+              <ul class="tab-group">
+                <li class="tab is-active">
+                  <span>新卒採用</span>
+                </li>
+                <li class="tab">
+                  <span>中途採用</span>
+                </li>
+              </ul>
+              <div class="panel-group">
+                <div class="panel is-show">
+                  <h3 class="ttl ttl-large">新卒採用</h3>
+                  <div class="m-dl-container">
+                    {studentConditionTables.map((condition) => (
+                      <dl>
+                        <dt>{condition["head"]}</dt>
+                        <dd>{condition["cont"]}</dd>
+                      </dl>
+                    ))}
                   </div>
-                  <div class="panel">
-                    <h3 class="ttl ttl-large">中途採用</h3>
-                    <div class="m-dl-container">
-                      {careerConditionTables.map((condition) => (
-                        <dl>
-                          <dt>{condition["head"]}</dt>
-                          <dd>{condition["cont"]}</dd>
-                        </dl>
-                      ))}
-                    </div>
+                </div>
+                <div class="panel">
+                  <h3 class="ttl ttl-large">中途採用</h3>
+                  <div class="m-dl-container">
+                    {careerConditionTables.map((condition) => (
+                      <dl>
+                        <dt>{condition["head"]}</dt>
+                        <dd>{condition["cont"]}</dd>
+                      </dl>
+                    ))}
                   </div>
                 </div>
               </div>

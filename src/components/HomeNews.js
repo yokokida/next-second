@@ -14,25 +14,7 @@ export default function HomeNews() {
               </div>
             </div>
             <div class="content-box">
-              <div class="m-post-container panel is-show">
-                {/* {blogs.map((blogs) => (
-                  <div class="item-box">
-                    <div class="post-info">
-                      <div class="post-meta">
-                        <time datetime="2023.8.1" class="post-date">
-                          2023.8.1
-                        </time>
-                        <div class="post-cats">
-                          <Link class="post-cat">お知らせ</Link>
-                        </div>
-                      </div>
-                      <h3 class="post-ttl">
-                        <Link>{blogs.title}</Link>
-                      </h3>
-                    </div>
-                  </div>
-                ))} */}
-              </div>
+              <div class="m-post-container panel is-show"></div>
               <BtnPrimary
                 url="blog"
                 txt="一覧はこちら"

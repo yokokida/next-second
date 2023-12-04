@@ -32,39 +32,37 @@ export default function HomeRecruit() {
   return (
     <>
       <section id="home-recruit">
-        <div class="sec-inner">
-          <div class="content-width">
-            <div class="content-box">
-              <div class="img-area img-box">
-                {images.map((img) => (
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    class="fadein-trigger"
-                    width={img.width}
-                    height={img.height}
-                  />
-                ))}
+        <div class="sec-inner content-width">
+          <div class="content-box">
+            <div class="img-area img-box">
+              {images.map((img) => (
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  class="fadein-trigger"
+                  width={img.width}
+                  height={img.height}
+                />
+              ))}
+            </div>
+            <div class="txt-area">
+              <div class="sec-ttl-box left-center fadein-trigger">
+                <h2 class="sec-ttl">recruit</h2>
+                <p class="sec-sub-ttl">採用情報</p>
               </div>
-              <div class="txt-area">
-                <div class="sec-ttl-box left-center fadein-trigger">
-                  <h2 class="sec-ttl">recruit</h2>
-                  <p class="sec-sub-ttl">採用情報</p>
-                </div>
-                <div class="cont">
-                  <p class="txt">
-                    Lorem ipsum dolor sit amet,
-                    <br />
-                    consectetur adipisicing elit. Eligendi,
-                    <br />
-                    quia, praesentium cum ex earum, in perferendis
-                  </p>
-                  <BtnPrimary
-                    url="recruit"
-                    txt="採用情報はこちら"
-                    class="btn-box"
-                  />
-                </div>
+              <div class="cont">
+                <p class="txt">
+                  Lorem ipsum dolor sit amet,
+                  <br />
+                  consectetur adipisicing elit. Eligendi,
+                  <br />
+                  quia, praesentium cum ex earum, in perferendis
+                </p>
+                <BtnPrimary
+                  url="recruit"
+                  txt="採用情報はこちら"
+                  class="btn-box"
+                />
               </div>
             </div>
           </div>

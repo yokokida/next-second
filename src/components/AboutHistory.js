@@ -21,18 +21,16 @@ export default function AboutOutline() {
   ];
   return (
     <section id="about-history">
-      <div class="sec-inner pt0">
-        <div class="content-width">
-          <SectionTitle ttl="history" subttl="沿革" />
-          <div class="content-box">
-            <div class="m-dl-container">
-              {outlines.map((outline) => (
-                <dl>
-                  <dt>{outline.head}</dt>
-                  <dd>{outline.cont}</dd>
-                </dl>
-              ))}
-            </div>
+      <div class="sec-inner content-width pt0">
+        <SectionTitle ttl="history" subttl="沿革" />
+        <div class="content-box">
+          <div class="m-dl-container">
+            {outlines.map((outline) => (
+              <dl>
+                <dt>{outline.head}</dt>
+                <dd>{outline.cont}</dd>
+              </dl>
+            ))}
           </div>
         </div>
       </div>

@@ -11,16 +11,14 @@ export default function AboutLicense() {
   return (
     <>
       <section id="about-license">
-        <div class="sec-inner pt0">
-          <div class="content-width">
-            <SectionTitle ttl="license" subttl="取得資格" />
-            <div class="content-box">
-              <ul class="m-list-container">
-                {licenses.map((license) => (
-                  <li>{license["name"]}</li>
-                ))}
-              </ul>
-            </div>
+        <div class="sec-inner content-width pt0">
+          <SectionTitle ttl="license" subttl="取得資格" />
+          <div class="content-box">
+            <ul class="m-list-container">
+              {licenses.map((license) => (
+                <li>{license["name"]}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

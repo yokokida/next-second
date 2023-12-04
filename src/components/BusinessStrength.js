@@ -22,30 +22,28 @@ export default function BusinessStrength() {
   return (
     <>
       <section id="business-strength">
-        <div class="sec-inner">
-          <div class="content-width">
-            <SectionTitle ttl="strength" subttl="強み" />
-            <div class="content-box">
-              <div class="m-example-container col-3">
-                {strengthes.map((strength) => (
-                  <div class="item-box">
-                    <div class="img-area">
-                      <div class="img-box thumb">
-                        <img
-                          src={strength["img"]}
-                          alt="強み"
-                          width="365"
-                          height="274"
-                        />
-                      </div>
-                    </div>
-                    <div class="txt-area">
-                      <h3 class="ttl">{strength["ttl"]}</h3>
-                      <p class="txt">{strength["txt"]}</p>
+        <div class="sec-inner content-width">
+          <SectionTitle ttl="strength" subttl="強み" />
+          <div class="content-box">
+            <div class="m-example-container col-3">
+              {strengthes.map((strength) => (
+                <div class="item-box">
+                  <div class="img-area">
+                    <div class="img-box thumb">
+                      <img
+                        src={strength["img"]}
+                        alt="強み"
+                        width="365"
+                        height="274"
+                      />
                     </div>
                   </div>
-                ))}
-              </div>
+                  <div class="txt-area">
+                    <h3 class="ttl">{strength["ttl"]}</h3>
+                    <p class="txt">{strength["txt"]}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
