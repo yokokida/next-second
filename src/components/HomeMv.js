@@ -64,21 +64,6 @@ export default function HomeMv() {
       <div id="home-mv">
         <div class="mv-inner">
           <div id="home-mv-slider" class="m-swiper-container">
-            {/* <div class="swiper">
-              <div class="swiper-wrapper">
-                {MvImages.map((img) => (
-                  <div class="swiper-slide">
-                    <Image
-                      src={img.src}
-                      alt="株式会社"
-                      class="fadein-trigger"
-                      width="1900"
-                      height="1266"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div> */}
             <Swiper
               slidesPerView={1}
               navigation
