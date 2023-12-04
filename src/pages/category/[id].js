@@ -2,7 +2,7 @@ import { client } from "@/libs/client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ModuleMv from "@/components/ModuleMv";
-import LoopPost from "@/components/LoopPost";
+import { LoopPost } from "@/components/LoopPost";
 import ModulePagenation from "@/components/ModulePagenation";
 
 export async function getStaticPaths() {

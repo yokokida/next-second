@@ -2,7 +2,7 @@ import { client } from "@/libs/client.js";
 import Header from "@/components/Header.js";
 import ModuleMv from "@/components/ModuleMv.js";
 import Footer from "@/components/Footer.js";
-import LoopPost from "@/components/LoopPost.js";
+import { LoopPost } from "@/components/LoopPost.js";
 import ModulePagenation from "@/components/ModulePagenation.js";
 
 export async function getStaticProps() {

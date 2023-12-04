@@ -1,7 +1,7 @@
-import { client } from "@/libs/client";
-import { SectionTitle } from "@/components/ModuleSectionTitle";
-import BtnPrimary from "@/components/ModuleBtnPrimary";
-import { LoopPost, LoopWorks } from "@/components/LoopPost";
+import { client } from "@/libs/client.js";
+import { SectionTitle } from "@/components/ModuleSectionTitle.js";
+import BtnPrimary from "@/components/ModuleBtnPrimary.js";
+import { LoopPost } from "@/components/LoopPost.js";
 import Header from "@/components/Header.js";
 import Footer from "@/components/Footer.js";
 import HomeMv from "@/components/HomeMv.js";

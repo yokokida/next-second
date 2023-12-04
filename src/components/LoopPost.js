@@ -116,4 +116,4 @@ function LoopVoice(props) {
   );
 }
 
-export default { LoopPost, LoopWorks, LoopEvent, LoopVoice };
+export { LoopPost, LoopWorks, LoopEvent, LoopVoice };
