@@ -1,4 +1,5 @@
 import { SectionTitle } from "./ModuleSectionTitle";
+import { ImgTxtBox } from "./ModuleImgTxtBox";
 
 export default function RecruitEnvironment() {
   const environments = [
@@ -24,26 +25,16 @@ export default function RecruitEnvironment() {
       <section id="recruit-environment">
         <div class="sec-inner content-width pt0">
           <SectionTitle ttl="environment" subttl="働く環境" />
-          <div class="content-box">
-            {environments.map((env) => (
-              <div class="m-img-txt-box">
-                <div class="img-area">
-                  <div class="img-box">
-                    <img
-                      src={env["img"]}
-                      alt="対応エリア"
-                      width="600"
-                      height="400"
-                    />
-                  </div>
-                </div>
-                <div class="txt-area">
-                  <h3 class="title">{env["ttl"]}</h3>
-                  <div class="txt">{env["txt"]}</div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {environments.map((env) => (
+            <ImgTxtBox
+              imgSrc={env.img}
+              imgClass="fadein-trigger"
+              imgWidth="600"
+              imgHeight="400"
+              ttl={env.ttl}
+              txt={env.txt}
+            />
+          ))}
         </div>
       </section>
     </>

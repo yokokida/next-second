@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { SectionTitle } from "./ModuleSectionTitle";
+import { ImgTxtContainer, ImgTxtBox } from "./ModuleImgTxtBox";
 
 export default function RecruitIntro() {
   const occupations = [
@@ -24,26 +24,18 @@ export default function RecruitIntro() {
       <section id="recruit-occupation">
         <div class="sec-inner content-width pt0">
           <SectionTitle ttl="occupation" subttl="職種を知る" />
-          <div class="content-box">
+          <ImgTxtContainer>
             {occupations.map((occupation) => (
-              <div class="m-img-txt-box">
-                <div class="img-area">
-                  <div class="img-box">
-                    <Image
-                      src={occupation["img"]}
-                      alt="対応エリア"
-                      width="500"
-                      height="333"
-                    />
-                  </div>
-                </div>
-                <div class="txt-area">
-                  <h3 class="title">{occupation["ttl"]}</h3>
-                  <div class="txt">{occupation["txt"]}</div>
-                </div>
-              </div>
+              <ImgTxtBox
+                imgSrc={occupation.img}
+                imgClass="fadein-trigger"
+                imgWidth="500"
+                imgHeight="333"
+                ttl={occupation.ttl}
+                txt={occupation.txt}
+              />
             ))}
-          </div>
+          </ImgTxtContainer>
         </div>
       </section>
     </>

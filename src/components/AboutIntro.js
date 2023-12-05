@@ -1,42 +1,19 @@
-import Image from "next/image";
+import { ImgTxtBoxReverse } from "./ModuleImgTxtBox";
 
-export default function AboutIntro() {
+function AboutIntro() {
   return (
     <section id="about-intro">
-      <div class="sec-inner content-width pt0">
+      <div class="sec-inner content-width">
         <div class="content-box">
-          <div class="m-img-txt-box reverse">
-            <div class="img-area">
-              <div class="img-box">
-                <Image
-                  src="/images/home/business_01.jpg"
-                  alt="事業内容1"
-                  class="fadein-trigger"
-                  width="428"
-                  height="379"
-                />
-              </div>
-            </div>
-            <div class="txt-area">
-              <h3 class="title">
-                地域に、
-                <br />
-                <span class="zenkaku">｢巡らせる」</span>しごと。
-              </h3>
-              <div class="txt">
-                <p>
-                  地域の発展には、インフラ設備、エネルギーの供給が必要不可欠です。
-                  <br />
-                  私たちのしごとは、給排水衛生設備工事・ガス設備工事といった、配管を張り「巡らせる」こと。
-                </p>
-                <p>
-                  この街の安全と発展に貢献すべく、地域と共に歩む企業として、地域に思いを「巡らせる」存在を、私たちは目指しています。
-                </p>
-              </div>
-            </div>
-          </div>
+          <ImgTxtBoxReverse
+            img="/images/home/business_01.jpg"
+            ttl="タイトル"
+            subttl="ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト"
+          />
         </div>
       </div>
     </section>
   );
 }
+
+export { AboutIntro };

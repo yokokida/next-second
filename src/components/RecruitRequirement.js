@@ -1,4 +1,5 @@
 import { SectionTitle } from "./ModuleSectionTitle";
+import { DlDtDd } from "./ModuleDlContainer";
 
 export default function RecruitIntro() {
   const studentConditionTables = [
@@ -26,22 +27,6 @@ export default function RecruitIntro() {
       head: "給与",
       cont: "大学卒 215,000円～<br>高校卒 200,000円～<br>昇給：年1回<br>試用期間：3か月<br>試用期間中の労働条件：同条件",
     },
-    {
-      head: "手当等",
-      cont: "通勤手当（上限24,500円）、家族手当（扶養家族1名につき10,000円 ※子ども18歳まで）、借家手当、資格手当",
-    },
-    {
-      head: "賞与",
-      cont: "年2回",
-    },
-    {
-      head: "応募条件",
-      cont: "普通自動車運転免許<br>39歳以下の方（例外事由３号のイ）",
-    },
-    {
-      head: "選考方法",
-      cont: "ページ下部の応募フォームよりご応募ください。選考のうえ追ってご連絡いたします。",
-    },
   ];
   const careerConditionTables = [
     {
@@ -68,22 +53,6 @@ export default function RecruitIntro() {
       head: "給与",
       cont: "大学卒 215,000円～<br>高校卒 200,000円～<br>昇給：年1回<br>試用期間：3か月<br>試用期間中の労働条件：同条件",
     },
-    {
-      head: "手当等",
-      cont: "通勤手当（上限24,500円）、家族手当（扶養家族1名につき10,000円 ※子ども18歳まで）、借家手当、資格手当",
-    },
-    {
-      head: "賞与",
-      cont: "年2回",
-    },
-    {
-      head: "応募条件",
-      cont: "普通自動車運転免許<br>39歳以下の方（例外事由３号のイ）",
-    },
-    {
-      head: "選考方法",
-      cont: "ページ下部の応募フォームよりご応募ください。選考のうえ追ってご連絡いたします。",
-    },
   ];
   return (
     <>
@@ -105,10 +74,7 @@ export default function RecruitIntro() {
                   <h3 class="ttl ttl-large">新卒採用</h3>
                   <div class="m-dl-container">
                     {studentConditionTables.map((condition) => (
-                      <dl>
-                        <dt>{condition["head"]}</dt>
-                        <dd>{condition["cont"]}</dd>
-                      </dl>
+                      <DlDtDd head={condition.head} cont={condition.cont} />
                     ))}
                   </div>
                 </div>
@@ -116,10 +82,7 @@ export default function RecruitIntro() {
                   <h3 class="ttl ttl-large">中途採用</h3>
                   <div class="m-dl-container">
                     {careerConditionTables.map((condition) => (
-                      <dl>
-                        <dt>{condition["head"]}</dt>
-                        <dd>{condition["cont"]}</dd>
-                      </dl>
+                      <DlDtDd head={condition.head} cont={condition.cont} />
                     ))}
                   </div>
                 </div>
