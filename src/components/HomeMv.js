@@ -76,7 +76,7 @@ export default function HomeMv() {
                     src={img.src}
                     width={1900}
                     height={1266}
-                    // className="fadein-trigger"
+                    className=""
                     alt="ASTRO"
                   />
                 </SwiperSlide>

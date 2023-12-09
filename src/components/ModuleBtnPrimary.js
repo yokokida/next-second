@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function BtnPrimary(props) {
+function BtnPrimary(props) {
   return (
     <>
       <div class={props.class}>
@@ -11,3 +11,5 @@ export default function BtnPrimary(props) {
     </>
   );
 }
+
+export { BtnPrimary };

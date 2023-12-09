@@ -8,6 +8,14 @@ function ImgTxtContainer({ children }) {
   );
 }
 
+function ImgTxtWideContainer({ children }) {
+  return (
+    <>
+      <div class="m-img-txt-wide-container">{children}</div>
+    </>
+  );
+}
+
 function ImgTxtBox(props) {
   return (
     <>
@@ -56,4 +64,62 @@ function ImgTxtBoxReverse(props) {
   );
 }
 
-export { ImgTxtContainer, ImgTxtBox, ImgTxtBoxReverse };
+function ImgTxtBoxVerticalTtl(props) {
+  var num = ("0" + props.number).slice(-2);
+  return (
+    <>
+      <div class="m-img-txt-box">
+        <div class="img-area">
+          <div class="img-box">
+            <Image
+              src={props.imgSrc}
+              alt={props.ttl}
+              class={props.imgClass}
+              width={props.imgWidth}
+              height={props.imgHeight}
+            />
+          </div>
+        </div>
+        <div class="txt-area">
+          <div class="vertical-ttl-box">
+            <span class="index-num">{num}</span>
+            <h3 class="title vertical">{props.ttl}</h3>
+          </div>
+          <p class="txt">{props.txt}</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function ImgTxtBoxColumn(props) {
+  return (
+    <>
+      <div class="m-img-txt-box-column">
+        <div class="img-area">
+          <div class="img-box">
+            <Image
+              src={props.imgSrc}
+              alt={props.ttl}
+              class={props.imgClass}
+              width={props.imgWidth}
+              height={props.imgHeight}
+            />
+          </div>
+        </div>
+        <div class="txt-area">
+          <p class="txt">{props.txt}</p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export {
+  ImgTxtContainer,
+  ImgTxtWideContainer,
+  ImgTxtBox,
+  ImgTxtBoxReverse,
+  ImgTxtBoxVerticalTtl,
+  ImgTxtBoxColumn,
+};

@@ -15,7 +15,7 @@ import {
 } from "@/components/ModuleSectionTitle";
 import { DlDtDd } from "@/components/ModuleDlContainer";
 import ModuleForm from "@/components/ModuleForm";
-import BtnPrimary from "@/components/ModuleBtnPrimary";
+import { BtnPrimary } from "@/components/ModuleBtnPrimary";
 
 export default function Recruit() {
   const occupations = [

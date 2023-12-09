@@ -28,4 +28,17 @@ function LayoutSectionPt0WithoutWidth({ sectionId, children }) {
   );
 }
 
-export { LayoutSection, LayoutSectionPt0, LayoutSectionPt0WithoutWidth };
+function LayoutSectionWithoutWidthInner({ sectionId, children }) {
+  return (
+    <>
+      <section id={sectionId}>{children}</section>
+    </>
+  );
+}
+
+export {
+  LayoutSection,
+  LayoutSectionPt0,
+  LayoutSectionPt0WithoutWidth,
+  LayoutSectionWithoutWidthInner,
+};

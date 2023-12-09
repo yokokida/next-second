@@ -5,7 +5,7 @@ import {
   SectionTitleLeftcenter,
   SectionTitleVertical,
 } from "@/components/ModuleSectionTitle.js";
-import BtnPrimary from "@/components/ModuleBtnPrimary.js";
+import { BtnPrimary } from "@/components/ModuleBtnPrimary.js";
 import { LoopPost } from "@/components/LoopPost.js";
 import Header from "@/components/Header.js";
 import Footer from "@/components/Footer.js";
