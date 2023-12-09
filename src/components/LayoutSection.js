@@ -18,4 +18,14 @@ function LayoutSectionPt0({ sectionId, children }) {
   );
 }
 
-export { LayoutSection, LayoutSectionPt0 };
+function LayoutSectionPt0WithoutWidth({ sectionId, children }) {
+  return (
+    <>
+      <section id={sectionId}>
+        <div class="sec-inner pt0">{children}</div>
+      </section>
+    </>
+  );
+}
+
+export { LayoutSection, LayoutSectionPt0, LayoutSectionPt0WithoutWidth };
