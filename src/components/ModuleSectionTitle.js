@@ -9,6 +9,17 @@ function SectionTitle(props) {
   );
 }
 
+function SectionTitleLeftcenter(props) {
+  return (
+    <>
+      <div class="sec-ttl-box left-center fadein-trigger">
+        <h2 class="sec-ttl">{props.ttl}</h2>
+        <p class="sec-sub-ttl">{props.subttl}</p>
+      </div>
+    </>
+  );
+}
+
 function SectionTitleVertical(props) {
   return (
     <>
@@ -33,4 +44,9 @@ function SectionTitleContentWidth(props) {
   );
 }
 
-export { SectionTitle, SectionTitleVertical, SectionTitleContentWidth };
+export {
+  SectionTitle,
+  SectionTitleLeftcenter,
+  SectionTitleVertical,
+  SectionTitleContentWidth,
+};
