@@ -1840,7 +1840,7 @@ module
 }
 
 .m-rectangle-container .item-box {
-	width: 268px;
+	width: 24%;
 	font-size: 2rem;
 	font-family: var(--shippori);
 	text-align: center;
@@ -2089,7 +2089,7 @@ module
 }
 
 .m-example-container.col-2 .item-box {
-	width: 525px;
+	width: 49%;
 }
 
 .m-example-container.col-3 .item-box {
