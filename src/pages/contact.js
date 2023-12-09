@@ -1,7 +1,9 @@
 import Header from "@/components/Header.js";
 import ModuleMv from "@/components/ModuleMv.js";
 import Footer from "@/components/Footer.js";
-import RecruitForm from "@/components/RecruitForm.js";
+import ModuleForm from "@/components/ModuleForm";
+import { LayoutSection } from "@/components/LayoutSection";
+import { SectionTitle } from "@/components/ModuleSectionTitle";
 
 export default function Contact() {
   return (
@@ -9,7 +11,14 @@ export default function Contact() {
       <Header />
       <main>
         <ModuleMv />
-        <RecruitForm />
+        <LayoutSection sectionId="recruit-entry">
+          <SectionTitle ttl="entry" subttl="エントリー" />
+          <div id="form-box">
+            <form action="https://ssgform.com/s/hOOcV8reaXzU" method="POST">
+              <ModuleForm />
+            </form>
+          </div>
+        </LayoutSection>
       </main>
       <Footer />
     </div>

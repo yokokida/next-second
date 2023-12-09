@@ -8,11 +8,11 @@ import {
   LayoutSectionPt0,
   LayoutSectionPt0WithoutWidth,
 } from "@/components/LayoutSection";
-import { ImgTxtContainer, ImgTxtBox } from "@/components/ModuleImgTxtBox";
 import {
   SectionTitle,
   SectionTitleContentWidth,
 } from "@/components/ModuleSectionTitle";
+import { ImgTxtContainer, ImgTxtBox } from "@/components/ModuleImgTxtBox";
 import { DlDtDd } from "@/components/ModuleDlContainer";
 import ModuleForm from "@/components/ModuleForm";
 import { BtnPrimary } from "@/components/ModuleBtnPrimary";

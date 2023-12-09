@@ -2,7 +2,7 @@ import { client } from "@/libs/client.js";
 import Header from "@/components/Header.js";
 import ModuleMv from "@/components/ModuleMv.js";
 import Footer from "@/components/Footer.js";
-import { LoopPost } from "@/components/LoopPost.js";
+import { LoopLine } from "@/components/LoopPost.js";
 import ModulePagenation from "@/components/ModulePagenation.js";
 
 export async function getStaticProps() {
@@ -25,7 +25,7 @@ export default function Blogs({ blogs }) {
           <div class="content-width">
             <div class="m-post-container">
               {blogs.map((content) => (
-                <LoopPost
+                <LoopLine
                   id={content.id}
                   publishedAt={content.publishedAt}
                   categoryName={content.category.name}

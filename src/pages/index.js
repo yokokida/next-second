@@ -6,7 +6,7 @@ import {
   SectionTitleVertical,
 } from "@/components/ModuleSectionTitle.js";
 import { BtnPrimary } from "@/components/ModuleBtnPrimary.js";
-import { LoopPost } from "@/components/LoopPost.js";
+import { LoopLine } from "@/components/LoopPost.js";
 import Header from "@/components/Header.js";
 import Footer from "@/components/Footer.js";
 import HomeMv from "@/components/HomeMv.js";
@@ -127,7 +127,7 @@ export default function Home({ blogs }) {
           <div class="content-box">
             <div class="m-post-container panel is-show">
               {blogs.map((content) => (
-                <LoopPost
+                <LoopLine
                   id={content.id}
                   publishedAt={content.publishedAt}
                   categoryName={content.category.name}
